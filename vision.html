@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Willie Xie Design Portfolio">
+    <meta name="description" content="Willie Xie Design Portfolio">
+    <title>WX</title>
+    <link rel="icon" href="img/thmb.png">
+    <!-- CSS FILES -->
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+     <link rel="stylesheet" type="text/css" href="css/uikit.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+</head>
+
+<body>
+<div id="navbar"class="navbar">
+<!--<a href="index.html"><div style="position: fixed; top: 33px; left: 10%;z-index: 1020"><div class="logo1">WILLIE XIE</div></div></a>-->
+<input id="burger" type="checkbox" />
+
+<label for="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
+
+<nav>    
+  <ul>
+    <li><a href="/" class="checked">TANGIBLE</a></li>
+    <li><a href="/digital">DIGITAL</a></li>
+    <li><a href="/about" style="padding-bottom: 30%;">ABOUT</a></li>
+    <a href="tel:+8613122324885"><img src="img/Asset%202.svg" style="height: 20px"></a>
+      <a href="mailto:xie.willie@gmail.com"><img src="img/Asset%201.svg" style="height: 20px"></a>
+      <a href="https://www.linkedin.com/in/williexie"><img src="img/Asset%203.svg" style="height: 20px"></a>
+  </ul>
+</nav>
+ 
+
+
+<div class="topnav">
+  <a class="active" href="\">TANGIBLE</a>
+  <a href="\digital">DIGITAL</a>
+  <a href="\about">ABOUT</a>
+  
+</div></div>
+
+<img class="headerimg" src="img/5_6.png">
+<div id="lottie1" style="height: 400px; width: 800px"></div>
+    <video class="vid" loop muted playsinline uk-video="autoplay: inview">
+    <source src="img/vision.webm" type="video/webm" />
+    <source src="img/vision.mp4" type="video/mp4" />
+    </video>
+<img class="contentimg" src="img/232279_01_shanutec_jjd_xpower_powertrack_1.jpg">
+<img class="contentimg" style="max-height: 500px" src="img/jjd_brochure_comb4.jpg">
+<div class="splitgrid">
+    <ul>
+        <li></li>
+        <li></li>
+        <li><img src="img/5_2.jpg"></li>
+        <li></li>
+    </ul>
+    
+</div>
+
+
+
+
+
+    <script>
+    window.onscroll = () => {
+  const nav = document.querySelector('#navbar');
+  if(this.scrollY <= 10) nav.className = 'navbar'; else nav.className = 'scroll';
+};
+    </script>
+    <script>
+    sessionStorage.setItem('state', 'section1');
+    </script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js/lottie.js"></script>
+    <script>
+    lottie.loadAnimation({
+  container: document.getElementById('lottie1'), // the dom element that will contain the animation
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'img/ob2.json' // the path to the animation json
+});
+    </script>
+</body>
+
+</html>
